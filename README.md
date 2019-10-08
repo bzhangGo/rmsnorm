@@ -48,7 +48,7 @@ where we initialize the weights with a center of about 0.2. The figure below sug
 in RMSNorm does not hurt its stability.
 
 <p align="center">
-  <img src="./ininmt.svg" height="300" style="width: 100%">
+  <img src="./ininmt.svg" height="300" width="100%">
   <em>SacreBLEU score curve of LayerNorm and RMSNorm on newstest2013 (devset) when the initialization center 
   is 0.2.</em>
 </p>
