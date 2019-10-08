@@ -127,6 +127,8 @@ You need chang the `layer_norm` function in `layers.py` as follows:
     ```
 `b` here is deletable. The training follows a similar way as above.
 
+* The RMSNorm for Transformer is implemented in [zero](https://github.com/bzhangGo/zero).
+
 ### CNN/Daily Mail Reading Comprehension
 
 We experiment with the bidirectional attentive reader model proposed by Hermann et al. 
