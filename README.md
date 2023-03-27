@@ -24,7 +24,11 @@ which diminishes the net efficiency gain from faster and more stable training, a
 RMSNorm simplifies LayerNorm by removing the mean-centering operation, or normalizing layer activations with RMS
 statistic:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align}&space;\begin{split}&space;&&space;\bar{a}_i&space;=&space;\frac{a_i}{\text{RMS}(\mathbf{a})}&space;g_i,&space;\quad&space;\text{where}~~&space;\text{RMS}(\mathbf{a})&space;=&space;\sqrt{\frac{1}{n}&space;\sum_{i=1}^{n}&space;a_i^2}.&space;\end{split}\nonumber&space;\end{align}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align}&space;\begin{split}&space;&&space;\bar{a}_i&space;=&space;\frac{a_i}{\text{RMS}(\mathbf{a})}&space;g_i,&space;\quad&space;\text{where}~~&space;\text{RMS}(\mathbf{a})&space;=&space;\sqrt{\frac{1}{n}&space;\sum_{i=1}^{n}&space;a_i^2}.&space;\end{split}\nonumber&space;\end{align}" title="\begin{align} \begin{split} & \bar{a}_i = \frac{a_i}{\text{RMS}(\mathbf{a})} g_i, \quad \text{where}~~ \text{RMS}(\mathbf{a}) = \sqrt{\frac{1}{n} \sum_{i=1}^{n} a_i^2}. \end{split}\nonumber \end{align}" /></a>
+$$
+\begin{align}
+\begin{split} & \bar{a}_i = \frac{a_i}{\text{RMS}(\mathbf{a})} g_i, \quad \text{where}~~ \text{RMS}(\mathbf{a}) = \sqrt{\frac{1}{n} \sum_{i=1}^{n} a_i^2}. \end{split}\nonumber 
+\end{align}
+$$
 
 
 When the mean of the inputs is exactly 0, then LayerNorm equals to RMSNorm. We also observe that the RMS statistic 
